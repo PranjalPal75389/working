@@ -9,6 +9,6 @@ function tipCalculate(){
     // tip=Amount*Percentage/100;
     // total=Amount+tip; 
     total=Amount*(1+Percentage/100);
-    totalAmount.textContent=`Your Total: ${total}`;
+    totalAmount.textContent=`Your Total: ${total.toFixed(2)}`;
     
 }
