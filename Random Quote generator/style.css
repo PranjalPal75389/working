@@ -1,0 +1,41 @@
+body{
+    font-family: monospace;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 194, 143, 0.699);   
+}
+div{
+   background-color: rgba(68, 219, 169,0.1);
+    width: 90%;
+    margin:10px 10px;
+    padding: 35px 15px;
+    text-align: center;
+    box-shadow: 0 0 15px gray; 
+   
+    
+}
+h1{
+     font-size: 35px;
+}
+h2{
+    font-size:30px;
+}
+h3{
+    font-size: 25;
+}
+button{
+    padding: 10px 70px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(190, 190, 190, 0.952);
+    
+}
+button:hover{
+    color:green;
+    background-color: white;
+    box-shadow: 0 0 15px black;
+    text-shadow: 2px 2px 5px;
+}
