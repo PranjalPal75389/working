@@ -72,10 +72,10 @@ ul li::before {
     content: "";
     left: 0px;
     top: 0px;
-    position: relative;
+    position: absolute;
+    /* Make sure the position is absolute */
     height: 21px;
     width: 21px;
-    background-image: url(/images/uncheck.webp);
     background-size: cover;
 }
 
@@ -88,4 +88,15 @@ li span {
 }
 li span:hover{
     background-color: grey;
+}
+.checked::before{
+    margin-right: 5px;
+        content: "";
+        left: 0px;
+        top: 0px;
+        position: relative;
+        height: 21px;
+        width: 21px;
+        background-image: url(/images/check.webp);
+        background-size: cover;
 }
