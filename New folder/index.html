@@ -3,39 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple calculator</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="calculator">
-      <input type="text" readonly>
-      <div class="buttons">
-        <button class="clear">AC</button>
-        <button class="del">Del</button>
-        <button class="operator">%</button>
-        <button class="operator">/</button>
-
-        <button class="number">7</button>
-        <button class="number">8</button>
-        <button class="number">9</button>
-        <button class="operator">*</button>
-
-        <button class="number">4</button>
-        <button class="number">5</button>
-        <button class="number">6</button>
-        <button class="operator">-</button>
-
-        <button class="number">1</button>
-        <button class="number">2</button>
-        <button class="number">3</button>
-        <button class="operator">+</button>
-        
-        <button class="number">0</button>
-        <button class="number">00</button>  
-        <button class="decimal">.</button>
-        <button class="operator">=</button>
+    <div class="container">
+      <div class="todoApp">
+        <h2>To-Do-List<img src="/images/todolist.webp" height="35px" ; /></h2>
+        <div class="row">
+          <input type="text" id="inputField" placeholder="Add your text here" >
+          <button  onclick="addTask()">Add</button>
+        </div>
+        <div class="listContainer">
+          <ul id="listContainer">
+            <li class="checked">Task 1</li>
+            <li>Task 2</li>
+          </ul>
+        </div>
       </div>
-    </div> 
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
