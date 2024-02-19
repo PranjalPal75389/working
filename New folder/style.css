@@ -1,0 +1,81 @@
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira%20Code:wght@300..700&display=swap');
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applying Google Font to all text */
+body {
+    font-family: 'Fira Code', monospace;
+    margin: 0 15px;
+}
+
+/* Styling the container */
+.container {
+    background: linear-gradient(130deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    border-radius: 15px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Styling the input field */
+input[type="text"] {
+    padding-left: 15px;
+    height: 45px;
+    width: 80%;
+    border-radius: 45px;
+    border: 2px solid gray;
+    margin: 10px;
+}
+
+/* Styling the cityname container */
+.city-name {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+/* Styling the search image */
+.search-img {
+    border: 2px solid gray;
+    background-color: aliceblue;
+    padding: 10px;
+
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Styling the clouds image */
+.clouds {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* Styling the details container */
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+/* Styling the humidity and wind info */
+.details>div {
+    text-align: center;
+    flex: 1;
+    /* Distribute equal space between humidity and wind info */
+}
+
+/* Styling the images in the details */
+.details img {
+    height: 60px;
+}
