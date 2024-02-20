@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name here" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+
+        <label for="password">Create Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a Password" minlength="8" required><br>
+
+        <label for="class">Class</label>
+        <select id="class" name="class">
+            <option value="FYBSCIT">FY BSC IT</option>
+            <option value="SYBSCIT">SY BSC IT</option>
+            <option value="TYBSCIT">TY BSC IT</option>
+        </select><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="1" max="100" value="18" size="8"><br>
+
+        Sex/Gender:<br>
+        <input type="radio" id="male" name="gender" value="male">Male
+        <input type="radio" id="female" name="gender" value="female">Female
+        <input type="radio" id="others" name="gender" value="others">Others(My friends)<br>
+
+        <label for="mobno">if you are female please drop your no. </label><br>
+        👉 <input type="tel" id="mobno" name="mobno" placeholder="Enter your mobile No.😊" size="25"><br>
+
+        Which are your interest <br>
+        <label><input type="checkbox" value="c" name="interest">C</label>
+        <label><input type="checkbox" value="c++" name="interest">C++</label>
+        <label><input type="checkbox" value="java" name="interest">Java</label>
+        <label><input type="checkbox" value="python" name="interest">Python</label>
+        <label><input type="checkbox" value="others" name="interest">Others </label><br>
+
+        <label for="DOB">Date of birth</label>
+        <input type="date" id="DOB" name="DOB"><br>
+
+        <label for="pincode">Pin Code:</label>
+        <input type="text" id="pincode" name="pincode" maxlength="6" size="10" placeholder="Postol No."><br>
+
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" value="mumbai"><br>
+
+        <b>IMP SocialLinks</b><br>
+        <label>Linkedin <input type="url" class="socialLinks" name="linkedin"></label><br>
+        <label>Github <input type="url" class="socialLinks" name="github"></label><br>
+
+        <input type="file" id="uploadImage" accept="image/png image/jpeg "><br>
+        <label for="uploadImage">upload your Photo (PNG , JPEG only)</label>
+
+        <input type="file" id="uploadResume" accept=".pdf,.docx,.ppt,.pptx,.txt,.xml image/* Document/* "><br>
+        <label for="uploadResume">upload your Resume / Documents </label><br>
+
+        <label for="feedback"> Feedback:</label><br>
+        <textarea rows="3" cols="40" id="feedback"
+            name="feedback">you can write your opinion /feedback/comments here </textarea><br>
+
+        <button type="reset" id="reset">Reset</button>
+
+        <button onclick='SubForm()'>Submit</button>
+    </form>
+
+    <h3 id="last"></h3>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: `https://${google}.com/data/${link}/`,
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                success: function () {
+                    alert("Form Data Submitted :)")
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+        const google = "api.apispreadsheets"
+        const link = "KXn01DcLThDbZrLZ";
+    </script>
+</body>
+
+</html>
