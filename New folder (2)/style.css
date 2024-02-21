@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira%20Code');
+
+* {
+    font-family: cursive, 'Fira Code', 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 100vh;
+    padding: 0px 10px;
+}
+
+.child {
+    background-color: aliceblue;
+    border: 2px solid;
+    border-radius: 10px;
+    border: none;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 5px #5b5858;
+}
+
+p {
+    text-align: right;
+    color: green;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+
+h1 {
+    margin: 20px 0px;
+}
+
+input {
+    color: green;
+    font-size: 30px;
+    margin: 10px 0px;
+    padding: 8px;
+    text-align: center;
+    width: 100%;
+    border: 5px solid;
+}
+
+input::placeholder {
+    color: lightgrey;
+}
+
+button {
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: green;
+}
