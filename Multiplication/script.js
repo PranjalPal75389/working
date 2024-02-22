@@ -4,7 +4,7 @@ const userInput = document.querySelector("input");
 const displayScore = document.querySelector("p");
 const submitBtn = document.getElementById("submitBtn");
 var score = 0;
-
+// function to generate the question
 function generateQuestion() {
 
     let firstNum = Math.floor(Math.random() * 20) + 1;
@@ -12,19 +12,24 @@ function generateQuestion() {
 
     answer = firstNum * secondNum;
     question.innerHTML = `What is ${firstNum} multiply by ${secondNum}?`;
-    console.log(userInput.value);
-    console.log("ans : " + answer)
-
 }
-submitBtn.onclick = () => {
+//when user sumit the answer. This (function) will check if the user answer is correct or not.
+function start() {
     if (userInput.value == answer) {
         score++;
-        console.log("true")
     }
     else {
         score--;
     }
     displayScore.innerHTML = "Score:" + score;
+    // function call to generate the new question 
     generateQuestion();
 }
+
+// Run the start function is Enter key is pressed 
+userInput.addEventListener("keypress", function (e) {
+    if (e.key == "Enter")
+        start();
+})
+// load the question when page is load
 generateQuestion();
