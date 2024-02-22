@@ -10,24 +10,24 @@
 
 <body>
     <div class="container">
-        <div class="city-name">
-            <input type="text" placeholder="Enter the City Name">
-            <img class="search-img" src="images/search.webp" onclick="searchCity()" alt="search logo">
+        <div class="heading">
+            <input type="text" id="inputCityName" placeholder="Enter the City Name">
+            <img id="search-img" src="images/search.webp" onclick="searchWeather()" alt="search logo">
         </div><br>
         <img class="clouds" src="images/clouds.webp" alt="Weather images">
-        <h1>22°C</h1>
-        <h3>City Name</h3>
+        <h1 id="temp">22°C</h1>
+        <h3 class="cityName">City Name</h3>
 
 
         <div class="details">
             <div class="humidityInfo">
                 <img src="images/humidity.webp" alt="humidity" height="60px">
-                <h3>23%</h3>
+                <h3 id="humidity">23%</h3>
                 <p>Humidity</p>
             </div>
             <div class="windInfo">
                 <img src="images/wind.webp" alt="wind" height="60px">
-                <h3>45 KM/S</h3>
+                <h3 id="windSpeed">45 KM/S</h3>
                 <p>Speed</p>
             </div>
         </div>
