@@ -1,9 +1,10 @@
-const inputCityName = document.getElementById("inputCityName");
-const search = document.getElementById("search-img")
 
 search.addEventListener("click", searchWeather(inputCityName));
 
 function searchWeather() {
+    const inputCityName = document.getElementById("inputCityName");
+    const search = document.getElementById("search-img")
+
     city_name = inputCityName.value;
     checkWeather();
     async function checkWeather() {
