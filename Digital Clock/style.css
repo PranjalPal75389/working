@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(15, 250, 96, 1) 0%, rgba(4, 147, 198, 1) 37%, rgba(0, 212, 255, 1) 91%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.displaytime {
+    font-size: 67px; 
+    width: 340px;
+}
+.name{
+    font-size: 22px;
+    font-weight:600;
+}
+.container{
+    width: 350px;
+    background: linear-gradient(90deg, rgba(15, 250, 96, 1) 0%, rgba(4, 147, 198, 0.3771708512506565) 37%, rgba(0, 212, 255, 1) 91%);
+    border: 3px solid red;
+    border-radius: 10px;
+}
