@@ -22,6 +22,7 @@ function start() {
         score--;
     }
     displayScore.innerHTML = "Score:" + score;
+    userInput.value="";
     // function call to generate the new question 
     generateQuestion();
 }
