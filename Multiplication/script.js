@@ -21,7 +21,9 @@ function start() {
     else {
         score--;
     }
+    //update the score 
     displayScore.innerHTML = "Score:" + score;
+    // clear the input field
     userInput.value="";
     // function call to generate the new question 
     generateQuestion();
