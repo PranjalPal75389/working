@@ -1,6 +1,6 @@
 Form -  https://pranjalpal75389.github.io/working/Form
 
-Random Quote Generator -  https://pranjalpal75389.github.io/working/Random_quote_generator
+Random Quote Generator (Not working)-  https://pranjalpal75389.github.io/working/Random_quote_generator 
 
 Simple calculator -  https://pranjalpal75389.github.io/working/Simple_calculator
 
