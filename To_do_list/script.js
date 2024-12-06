@@ -48,3 +48,10 @@ function getData() {
   listContainer.innerHTML = localStorage.getItem("data");
 }
 getData();
+
+// press enter key to add the task 
+document.addEventListener("keydown",(e)=>{
+  if(e.key==="Enter"){
+   addTask();
+  }
+});
