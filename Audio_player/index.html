@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="icon" type="image/x-icon" href="./images/audio_player.ico">
+    <link rel="stylesheet" href="style.css">
+<body>
+    
+    <div class="audio-player">
+        <nav class="top-bar">
+            <div class="icon-circle">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="icon-circle">
+                 <i class="fa-solid fa-bars"></i>
+            </div>
+           
+        </nav>
+        <div class="album-thumnail">
+            <img src="./images/thumbnail.png" alt="">
+        </div>
+        <div class="album-info">
+            <h2>Albhum name</h2>
+            <p>Singer name</p>
+        </div>
+        <audio controls>
+            <source src="./audios/lost-in-dreams-abstract-chill-downtempo-cinematic-future-beats-270241.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+          </audio> 
+        <input type="range" class="audio-timing" value="0" id="progress">
+        <div class="control-icon-container backward">
+            <div> 
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div> 
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div> 
+                <i class="fa-solid fa-forward"></i>  
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/d962d80dd4.js" crossorigin="anonymous"></script>
+</body>
+</html>
