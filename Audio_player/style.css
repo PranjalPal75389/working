@@ -92,7 +92,7 @@ nav .icon-circle {
     background-color: rgb(255, 62, 223);
     transform: scale(1.5);
 }
-.fa-play{
+.fa-play , .fa-pause{
     color:white;   
     
 }

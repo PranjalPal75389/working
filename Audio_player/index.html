@@ -25,19 +25,19 @@
             <h2>Albhum name</h2>
             <p>Singer name</p>
         </div>
-        <audio controls>
+        <audio controls id="song">
             <source src="./audios/lost-in-dreams-abstract-chill-downtempo-cinematic-future-beats-270241.mp3" type="audio/mp3">
             Your browser does not support the audio tag.
           </audio> 
         <input type="range" class="audio-timing" value="0" id="progress">
         <div class="control-icon-container backward">
-            <div> 
+            <div onclick="previousSong()"> 
                 <i class="fa-solid fa-backward"></i>
             </div>
-            <div> 
-                <i class="fa-solid fa-play"></i>
+            <div onclick="playpause()"> 
+                <i class="fa-solid fa-play" id="ctrlIcon"></i>
             </div>
-            <div> 
+            <div onclick="nextSong()"> 
                 <i class="fa-solid fa-forward"></i>  
             </div>
         </div>
