@@ -1,31 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: "Poppins",'Courier New', Courier, monospace;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Courier New", Courier, monospace;
+  color: white;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 30px auto;
-    padding: 20px;
-    text-align: center;
+body {
+  background-color: #323437;
 }
-input{
-    padding: 20px;
-    width: 100%;
-    margin: 20px 0;
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
 }
-button{
-    border:none;
-    cursor: pointer;
-    padding: .4em .8em;
-    margin: 0 auto;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    background-color: #14ff14;
-    border-radius: 20px;
-    box-shadow: 5px 5px 3px rgba(5, 5, 5, 0.411) inset;
+input {
+  height: 100px;
+  font-size: 2rem;
+  background-color: #82868d5e;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px  rgb(187, 101, 101);
+}
+button {
+  border: none;
+  cursor: pointer;
+  padding: 0.4em 0.8em;
+  margin: 0.5rem auto;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  background-color: #e2b714;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px rgba(5, 5, 5, 0.411) inset;
+}
+.length-button-container {
+  background-color: #2c2e31;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 0.5rem 1rem;
+}
+.length-button {
+  background-color: rgb(243, 95, 95);
+  font-size: large;
 }

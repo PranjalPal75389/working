@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   let startTime;
   let quote = "";
-  const submitBtn = document.getElementsByTagName("BUTTON")[0];
+  const submitBtn = document.getElementById("submit-button")
   const textBox = document.querySelector(".text-box");
-  const textInput = document.getElementsByClassName("text-input")[0];
+  const textInput = document.querySelector(".text-input")
+  const lengthBtns = document.querySelectorAll(".length-button");
 
-  async function fetchText() {
+
+  async function fetchText( minLengthValue=100) {
     try {
-      const response = await fetch("https://api.quotable.io/random");
+      const response = await fetch(`https://api.quotable.io/random?minLength=${minLengthValue}`);
       const data = await response.json();
       console.log(data);
       quote = data.content;
@@ -75,5 +77,12 @@ document.addEventListener("DOMContentLoaded", () => {
   textBox.addEventListener("copy", (e) => {
     e.preventDefault();
     alert("copying are not allowed");
+  });
+ 
+ lengthBtns.forEach(btn => {
+    btn.addEventListener("click", async () => {
+      let minLengthValue = parseInt(btn.textContent, 10);
+      await fetchText(minLengthValue);
+    });
   });
 });
