@@ -1,16 +1,18 @@
-Form -  https://pranjalpal75389.github.io/working/Form
-
-https://pranjalpal75389.github.io/working/Audio_player/
+Weather - https://pranjalpal75389.github.io/working/Weather/
 
 Simple calculator -  https://pranjalpal75389.github.io/working/Simple_calculator
 
-StopWatch -  https://pranjalpal75389.github.io/working/Stopwatch
+typing test - https://pranjalpal75389.github.io/working/typing
 
-To do list -  https://pranjalpal75389.github.io/working/To_do_list
+Audio Player -https://pranjalpal75389.github.io/working/Audio_player/
+
+Form -  https://pranjalpal75389.github.io/working/Form
 
 Multiplication -  https://pranjalpal75389.github.io/working/Multiplication
 
-Weather - https://pranjalpal75389.github.io/working/Weather/
+To do list -  https://pranjalpal75389.github.io/working/To_do_list
+
+StopWatch -  https://pranjalpal75389.github.io/working/Stopwatch
 
 Digital Clock - https://pranjalpal75389.github.io/working/Digital_clock/
 
