@@ -1,6 +1,6 @@
 Form -  https://pranjalpal75389.github.io/working/Form
 
-Random Quote Generator (Not working)-  https://pranjalpal75389.github.io/working/Random_quote_generator 
+https://pranjalpal75389.github.io/working/Audio_player/
 
 Simple calculator -  https://pranjalpal75389.github.io/working/Simple_calculator
 
@@ -13,3 +13,5 @@ Multiplication -  https://pranjalpal75389.github.io/working/Multiplication
 Weather - https://pranjalpal75389.github.io/working/Weather/
 
 Digital Clock - https://pranjalpal75389.github.io/working/Digital_clock/
+
+Random Quote Generator (Not working)-  https://pranjalpal75389.github.io/working/Random_quote_generator 
