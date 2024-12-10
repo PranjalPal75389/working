@@ -93,6 +93,15 @@ async function textSpeech(){
   speech.text=textBox.textContent;
     speech.rate=1;
     speech.pitch=1;
+    speech.onstart = () => {
+      console.log("Speech started");
+    };
+    speech.onend = () => {
+      console.log("Speech ended");
+    };
+    speech.onerror = (event) => {
+      console.error("Speech error: ", event);
+    };
     speechSynthesis.speak(speech);
 
  } 
