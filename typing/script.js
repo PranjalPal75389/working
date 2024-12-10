@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const textBox = document.querySelector(".text-box");
   const textInput = document.querySelector(".text-input")
   const lengthBtns = document.querySelectorAll(".length-button");
+  const speakBtn = document.getElementById("speak-button")
 
 
   async function fetchText( minLengthValue=100) {
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(quote);
       console.log(quote.length);
       textBox.textContent = quote;
+      textSpeech();
     } catch (error) {
       console.error("Error fetching quote,", error);
       textBox.textContent = "failed to load quote";
@@ -85,4 +87,21 @@ document.addEventListener("DOMContentLoaded", () => {
       await fetchText(minLengthValue);
     });
   });
+async function textSpeech(){
+   if(speechSynthesis){
+  let speech = new SpeechSynthesisUtterance();
+  speech.text=textBox.textContent;
+    speech.rate=1;
+    speech.pitch=1;
+    speechSynthesis.speak(speech);
+
+ } 
+ else{
+  if(responsiveVoice.voiceSupport()){
+    responsiveVoice.speak(textBox.textContent);
+  }
+ }
+}
+// text to speak button event listener 
+speakBtn.addEventListener("click",textSpeech);
 });
