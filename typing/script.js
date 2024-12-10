@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 async function textSpeech(){
-   if(speechSynthesis){
+   if(window.speechSynthesis){
   let speech = new SpeechSynthesisUtterance();
   speech.text=textBox.textContent;
     speech.rate=1;
