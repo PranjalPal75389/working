@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-template-rows: repeat(3,100px);
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .2s linear;
+}
+.box:hover{
+    background-color: rgb(59, 59, 62);
+}
