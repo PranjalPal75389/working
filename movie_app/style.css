@@ -1,0 +1,105 @@
+:root {
+    --federal-blue: #03045eff;
+    --honolulu-blue: #a8e6cfe0;
+    --pacific-cyan: #a8e6cf;
+    --non-photo-blue:  #ffb3b3;
+    --light-cyan: #fff7b3;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-cyan);
+}
+
+.movie-search {
+    padding: .3em;
+    font-size: 35px;
+    margin: 20px auto;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: bold;
+    border: 5px solid black;
+    color: var(--federal-blue); /* Using a color from your palette */
+}
+
+.container {
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* background-color: var(--non-photo-blue); */
+    padding: 10px;
+}
+
+.box {
+    background-color:var(--non-photo-blue);
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+    color: rgb(71, 86, 244);
+}
+
+.box .movie-img {
+    position: relative;
+}
+
+.box .movie-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-details {
+    background-color: var(--light-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 95%;
+    opacity: 0;
+    left: 0;
+    bottom: -100px;
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.4s linear;
+    overflow: hidden;
+}
+
+.readmore-button {
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 30px;
+    background-color: var(--honolulu-blue);
+}
+
+.rating::before {
+    content: "rating ";
+}
+
+.rating {
+    float: right;
+    color: yellow;
+}
+
+.box:hover {
+    filter: blur(50%);
+}
+
+.box:hover .movie-details {
+    opacity: 1;
+    bottom: 27px;
+}
