@@ -1,9 +1,9 @@
 :root {
-    --federal-blue: #03045eff;
+    --federal-blue: rgb(39, 41, 195);
     --honolulu-blue: #a8e6cfe0;
     --pacific-cyan: #a8e6cf;
     --non-photo-blue:  #ffb3b3;
-    --light-cyan: #fff7b3;;
+    --light-cyan: #fff7b348;;
 }
 
 * {
@@ -21,14 +21,12 @@ body {
 }
 
 .movie-search {
-    padding: .3em;
-    font-size: 35px;
-    margin: 20px auto;
-    border-radius: 15px;
-    text-align: center;
-    font-weight: bold;
-    border: 5px solid black;
-    color: var(--federal-blue); /* Using a color from your palette */
+  font-size: 1.5rem;
+  height: 50px;
+  min-width: 300px;
+  margin: 10px auto;
+  text-align: center;
+    color: var(--federal-blue); 
 }
 
 .container {
@@ -36,7 +34,7 @@ body {
     flex: 1 1 0;
     flex-wrap: wrap;
     gap: 10px;
-    /* background-color: var(--non-photo-blue); */
+    background-color: var(--non-photo-blue);
     padding: 10px;
 }
 
@@ -60,30 +58,35 @@ body {
 }
 
 .movie-details {
-    background-color: var(--light-cyan);
+    background-color: var(--honolulu-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    height: 95%;
+    padding: 20px 0 !important;
     opacity: 0;
     left: 0;
     bottom: -100px;
     position: absolute;
-    padding: 5px;
     border-radius: 5px;
     transition: all 0.4s linear;
-    overflow: hidden;
+    max-height: 200px;
+    overflow-y: auto; 
+    flex-shrink:0;
+}
+.overview{
+    padding: 1rem 5px ;
 }
 
 .readmore-button {
-    color: black;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
-    padding: 0.2em;
+    padding: 0.2em 0.5em;
     border-radius: 30px;
-    background-color: var(--honolulu-blue);
+    background-color: var(--federal-blue)
+}
+.readmore-button a{
+    color: white;
 }
 
 .rating::before {
@@ -91,6 +94,10 @@ body {
 }
 
 .rating {
+    background-color: rgba(0, 0, 0, 0.71);
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 3px;
     float: right;
     color: yellow;
 }
@@ -102,4 +109,5 @@ body {
 .box:hover .movie-details {
     opacity: 1;
     bottom: 27px;
+
 }

@@ -40,12 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="movie-img">
           <img src=${movie_image + result.backdrop_path} alt="">
           <div class="movie-details">
-            <p>${result.overview}</p>
+            <p class="overview">${result.overview}</p>
             <button class="readmore-button"><a href="https://www.themoviedb.org/movie/${result.id}" target="_blank" >Read More</a>
 </button
           </div>
         </div>
-        <h3>${result.original_title} <span class="rating">${
+        <h3 >${result.original_title} <span class="rating">${
         result.vote_average
       }</span></h3>
       `;
